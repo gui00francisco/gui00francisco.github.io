@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Trabalho do curso de Fundamentos de Eletromagnetismo">
+    <meta name="keywords" content="Intensidade Relativa, Eletromagnetismo, elétron, próton, cargas, Coulumb">
+    <meta name="author" content="Guilherme Francisco Antunes Silva">
+    <title>Intensidade Relativa das Forças Gravitacional e Eletrostática</title>
+    <script src="script/script.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon1/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon1/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon1/favicon-16x16.png">
+    <link rel="manifest" href="/favicon1/site.webmanifest">
+    <link rel="mask-icon" href="/favicon1/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+ <div class="telacheia">
+  <nav class=" menu navbar fixed-top navbar-light">
+    <a class="nav-link" href="index.html"> MENU </a>
+    <a class="nav-link" href="#eletrostatica">Eletrostática</a>
+
+              <a class="nav-link" href="#leidecoulomb">Lei de Coulomb</a>
+              <a class="nav-link " href="#forcagravitacional">Força Gravitacional</a>
+              <a class="nav-link " href="#aplicandoconceitos">Aplicando Conceitos</a>
+              <a class="nav-link " href="#sabia">Você Sabia?</a>
+              <a class="nav-link " href="#quiz">Teste o Seu Conhecimento</a>
+              <a class="nav-link " href="#referencias">Referências</a>
+
+ </div>
+
+  </nav>
+
+  <div class="mobile">
+    <div class="menu pos-f-t">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="menu p-4">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"> MENU </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#eletrostatica">Eletrostática </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#leidecoulomb">Lei de Coulomb</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#forcagravitacional">Força Gravitacional</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#aplicandoconceitos">Aplicando Conceitos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#sabia">Você Sabia?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#quiz">Teste o Seu Conhecimento</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#referencias">Referências</a>
+            </li>
+
+
+          </ul>
+        </div>
+      </div>
+      <nav class="navbar fixed-top navbar-dark menu">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+<div class="apresentacao">
+        <div class="overlay">
+        <div class="apresentacaotext">
+          <h1>INTENSIDADE RELATIVA</h1>
+          <h2>FORÇAS GRAVITACIONAL E ELETROSTÁTICA</h2>
+        </div>
+
+        </div>
+      </div>
+
+<div class="principal" >
+  <span id="eletrostatica"></span>
+  <h3 id="eletrostatica">Propriedades Eletrostáticas</h3>
+  <div class="row">
+    <div class="col-md conteudo">
+      <h4>Força Elétrica</h4>
+      <p class="trabalho">
+        &nbsp &nbsp A força elétrica trata da interação de repulsão e atração dos corpos devido
+        ao campo elétrico gerado por cada um deles. Como ilustrado, cargas
+        com sinais iguais se repelem enquanto cargas com sinais diferentes se atraem.
+      </p>
+      <img src="images/atracaorepulsao.png" alt="Atração e Repulsão" class="imagep">
+    </div>
+    <div class="col-md conteudo">
+      <h4>Eletrização</h4>
+      <p class="trabalho">
+        &nbsp &nbsp Consiste no processo de transformar um corpo inicialmente
+        neutro em um corpo eletricamente carregado. Isso pode ser feito de
+        três maneiras: atrito, contato ou indução.
+      </p>
+      <img src="images/eletrizacao.png" alt="Atração e Repulsão" class="imageg">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md conteudo">
+      <h4>Carga Fundamental</h4>
+      <p class="trabalho">
+        &nbsp &nbsp Representa o menor valor possível para uma carga
+        existente, sendo atribuído aos prótons e elétrons.
+        $$ {e=1,60217662 \cdot 10^{-19}C} $$
+      </p>
+    </div>
+    <div class="col-md conteudo">
+      <h4>Quantização de Carga</h4>
+      <p class="trabalho">
+        &nbsp &nbsp Por definição, a quantização de uma carga elétrica é referente
+        a multiplicação de um inteiro de uma carga fundamental, ou seja:
+        $$ {Q=n \cdot e} $$
+      </p>
+    </div>
+  </div>
+</div>
+        <div class="blocototal ">
+          <div class="overlay">
+          <div class='conteudo '>
+                <p><span class='citacao'>"Seria uma coisa triste ser um átomo num universo sem físicos. E os físicos são feitos de átomos.
+                  Um físico é a maneira de um átomo saber que existem átomos." (WALD, George).</span><br/></p>
+          </div>
+        </div>
+        </div>
+  <div class="bloco">
+        <div class="container ">
+
+          <div class="row">
+
+            <div class="col-md conteudo">
+              <span id="leidecoulomb"></span>
+              <h3 id="leidecoulomb">Lei de Coulomb</h3>
+              <p class="trabalho">
+                &nbsp &nbsp Uma vez introduzido alguns conceitos de eletrização, vamos falar agora sobre a
+                Lei de Coulomb, que abrange os estudos sobre a força elétrica entre partículas eletricamente carregadas.<br/>
+                &nbsp &nbsp Quando o físico Charles Augustin de Coulomb estudou as forças de interação entre partículas carregadas,
+                ele usou uma balança de torção (Figura 1). Tal balança foi similar a usada por Henry Cavendish, 13 anos mais tarde,
+                para estudar a força de interação gravitacional, que é muito mais fraca que a elétrica.</p>
+
+              <p><img src="images/figura1.png" alt="Balança de torção" class="image"></p>
+
+              <p class="trabalho">
+              &nbsp &nbsp Ao observar o comportamento de repulsão entre duas esferas carregadas, Coulomb notou que a força elétrica (F)
+              entre cada carga é inversamente proporcional ao quadrado da distância (r) entre os corpos.
+              Bem como é diretamente proporcional ao produto das cargas (q).</br>
+              &nbsp &nbsp Sendo assim, ele conseguiu estabelecer
+              uma das principais leis da eletrostática conhecida nos dias de hoje, a Lei de Coulomb:</p>
+              <p>$$ {F=k \cdot {\frac{\mid Q_1 \cdot Q_2 \mid}{r^2}}} $$</p>
+              <p class="trabalho">
+                em que k é uma constante de proporcionalidade definida como:</p>
+                <p>$$ {k=8,99 \cdot 10^{9} N \cdot m^2/C^2} $$</p>
+            </div>
+          </div>
+            <div class="row">
+              <div class="col-md conteudo">
+                <h3 id="forcagravitacional">Força Gravitacional</h3>
+                <br>
+                <p class="trabalho">
+                  &nbsp &nbsp Isaac Newton concluiu que a força que mantém a Terra orbitando em torno do Sol,
+                  ou até mesmo, a maçã que cai próxima à superfície da Terra, têm uma mesma origem:
+                  a força gravitacional.</br>
+                  &nbsp &nbsp Segundo a lei de gravitação universal, duas massas puntiformes (m),
+                  separadas por uma distância (r), sofrem uma atração mútua dada por:</p>
+                  <p>$$ {F=G \cdot {\frac{m_1 \cdot m_2}{r^2}}} $$</p>
+                <p class="trabalho">
+                  em que G é a constante gravitacional definida como:</p>
+                  <p>$$ {G=6,67 \cdot 10^{-11} N \cdot m^2/kg^2} $$</p>
+                <p class="trabalho">
+                  &nbsp &nbsp No entanto é a mais fraca de todas as forças da natureza, sendo praticamente inexpressiva
+                  em níveis atômicos e moleculares, tendo como a  propriedade responsável pela intensidade
+                  dessa interação a massa dos corpos.</br>
+                  &nbsp &nbsp É interessante observar que a equação acima é muito parecida com a Lei de Coulomb.
+                  Uma diferença entre essas forças é que a força gravitacional somente será atrativa (Figura 2).</p>
+
+                  <p><img src="images/figura2.png" alt="Forças gravitacionais entre duas partículas" class="image2"></p>
+
+                  <p class="trabalho">
+                  &nbsp &nbsp A força gravitacional é bastante significativa entre objetos do tamanho de estrelas.
+                  Ela é responsável por manter a Terra agregada e os planetas girando ao redor do sol.</br>
+                  &nbsp &nbsp A atração gravitacional mútua no Sol comprime seu núcleo com intensidade e temperaturas muito altas, o que
+                  possibilita reações nucleares que geram energia ao Sol. Sem ela não seria possível manter aprisionadas
+                  as moléculas de gases na atmosfera, ou seja, os gases seriam expelidos para o espaço.
+
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md conteudo">
+                <h3 id="aplicandoconceitos">Aplicando Conceitos</h3>
+                <p class="trabalho">
+                &nbsp &nbsp Agora que entendemos sobre duas das forças mais importantes
+                de nossa existência, está na hora de relacioná-las. Para isso podemos pensar
+                em um exercício simples:
+                </br></br>
+                <i>Em algum local do espaço há dois grãos de poeira com <b>50μm</b> de diâmetro,
+                e com uma densidade de massa de <b>2,5 g/cm³</b>. Estão separados por uma distância <b>r</b>.
+                Se os grãos fossem eletricamente neutros, e livres de outras forças externas,
+                eventualmente colidiriam gravitacionalmente.
+                </br>
+                Agora, suponha que os dois grãos são carregados eletricamente com <b>n</b> elétrons extra.
+                Encontre o valor mínimo de <b>n</b> tal que a colisão gravitacional seja prevenida.</i>
+                </br></br>
+                &nbsp &nbsp Antes de mais nada, devemos primeiro organizar as informações que temos,
+                bem como efetuar as conversões das unidades para o SI, temos:
+                $$ {raio=R=25 \cdot 10^{-6}m} $$
+                $$ {densidade de massa=\rho=2500kg/m^3} $$
+                &nbsp &nbsp Como o objetivo é encontrar um valor de <b>n</b> tal que a colisão gravitacional
+                seja prevenida, então devemos igualar as forças gravitacional e elétrica, a fim de encontrar
+                a carga necessária que anule a força gravitacional, temos que:
+                $$ {F=G \cdot {\frac{m_1 \cdot m_2}{r^2}}=k \cdot {\frac{\mid Q_1 \cdot Q_2 \mid}{r^2}}} $$</br>
+                $$ {G \cdot {\frac{m^2}{r^2}}=k \cdot {\frac{Q^2}{r^2}}} $$</br>
+                $$ {Q^2=\frac{G}{k} \cdot m^2} $$</br>
+                &nbsp &nbsp Não temos o valor da massa, mas temos a sua densidade. Então podemos substituir <b>m</b>
+                por uma relação de multiplicação entre o volume do corpo (V) e sua densidade (ρ), pois &nbsp<b>m=ρ.V</b></br>
+                &nbsp &nbsp Como estamos interessados no valor de <b>n</b>, então podemos também utilizar a
+                relação da quantização de carga (formulado nas Propriedades Eletrostáticas), que consiste em
+                &nbsp<b>Q=n.e</b>, temos que:
+                $$ {(n \cdot e)^2=\frac{G}{k} \cdot (\rho \cdot V)^2} $$</br>
+                $$ {n \cdot e=\sqrt{\frac{G}{k} \cdot (\rho \cdot \frac{4}{3} \cdot \pi \cdot R^3)^2}} $$</br>
+                $$ {n=\frac{\sqrt{\frac{G}{k} \cdot (\rho \cdot \frac{4}{3} \cdot \pi \cdot R^3)^2}}{e}} $$</br>
+                &nbsp &nbsp Finalmente, podemos substituir os valores fornecidos, junto aos conhecidos, e, assim,
+                obter <b>n</b>:
+                $$ {n=\frac{\sqrt{\frac{6,67 \cdot 10^{-11} N \cdot m^2/kg^2}{8,99 \cdot 10^{9} N \cdot m^2/C^2} \cdot (2500kg/m^3 \cdot \frac{4}{3} \cdot \pi \cdot (25 \cdot 10^{-6}m)^3)^2}}{1,60217662 \cdot 10^{-19}C}} $$</br>
+                $$ {n=0,08797} $$
+                o resultado dessa conta pode ser conferido <b><a href="http://bit.ly/2WjIfzo">clicando aqui.</a></b></br></br>
+                &nbsp &nbsp O valor pequeno de <b>n</b> encontrado pode ser explicado porque a força gravitacional é
+                desprezível em comparação à força elétrica. Isso é sempre verdade para interações entre partículas atômicas e subatômicas.
+              </p>
+
+      <div class="row">
+        <div class="col-md conteudo">
+          <h3 id="sabia">Você Sabia?</h3>
+          <div class="row">
+            <div class="col-md conteudo">
+              <br/>
+              <img src="images/coulumb.png"  alt="Coulomb" class="image" ><br/>
+              <i>Charles Augustin de Coulomb (1736 – 1806)</i>
+            </div>
+            <div class="col-md conteudo">
+              <h4>Um pouco mais sobre Coulomb</h4>
+              <p class="trabalho">
+                &nbsp &nbsp “Coulomb nasceu em 14 de junho de 1736, na cidade de Angoulême, na França, filho de pais bem sucedidos,
+                vindos de uma família aristocrata. Ele estudou engenharia no Royal Engineering School of Mézières e,
+                então, ingressou para o exército, onde pôde aplicar seus conhecimentos de mecânica à construção de
+                balanças de torção.</br>
+                &nbsp &nbsp Nos 20 anos seguintes ao seu regresso, Coulomb mudou-se constantemente, mas passou cerca de 9 anos na
+                Índia como engenheiro militar do exército. Nessa época, o engenheiro francês foi o responsável pela
+                construção de um forte na Martinica.” (HELERBROCK).
+              </p>
+            </div>
+          </div>
+        <div class="col-md conteudo">
+          <p class="trabalho">
+            &nbsp &nbsp “Coulomb mostrava grande interesse nas pesquisas realizadas pelo clérigo Joseph Priestley, que estudava a
+            repulsão entre cargas elétricas e, por isso, decidiu estudar esse fenômeno, para tanto, o engenheiro desenvolveu um
+            aparato de medida extremamente sensível, capaz de medir a força elétrica presente entre duas esferas eletricamente
+            carregadas. Tal aparato, conhecido como balança de torção, consistia em uma haste suspensa por um fio, com duas esferas
+            metálicas em suas pontas.” (HELERBROCK).</br>
+            &nbsp &nbsp &nbsp Abaixo está um vídeo de um experimento caseiro da balança de torção:
+          </p>
+        </div>
+        <div class='blocototal '>
+          <div class='overlay'>
+            <div class="container conteudo">
+          <div class="row">
+
+            <div class="col-md conteudo">
+              <iframe width="60%" height="500px" src="https://www.youtube.com/embed/T41VKdFa3eU"
+               frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+          </div>
+        </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md conteudo">
+            <h4>Um pouco mais sobre Newton</h4>
+            <p class="trabalho">
+              &nbsp &nbsp Aquela história de que a maçã caiu na cabeça do Newton? Mentira, mas essa história é conhecida em
+              todo o mundo. Mas uma macieira, de fato, fez com que o cientista refletisse sobre a possibilidade de que a
+              mesma força capaz de fazer as maçãs caírem também pode ser responsável por “prender” as coisas no chão, a
+              isso ele chamou de: gravidade!</br>
+              &nbsp &nbsp Foi o próprio Newton quem deu origem ao boato de que a gravidade foi descoberta desse jeito.
+              Ele contou a história a um amigo, e o amigo contou ao mundo! Não interessa muito se a história não é bem
+              assim, porque a essência é verdadeira. Todo dia maçãs caem no chão.
+            </p>
+          </div>
+            <div class="col-md conteudo">
+              <br/>
+              <img src="images/newton.jpg"  alt="Newton" class="image" ><br/>
+              <i>Isaac Newton (1643 – 1727)</i>
+            </div>
+          </div>
+      <div class="row">
+        <div class="col-md conteudo">
+          <h3 id="quiz">Teste os Seus Conhecimentos</h3>
+        <br>
+        <p class="trabalho">
+          <b>(YOUNG & FREEDMAN)</b> Uma partícula <b>α</b> (o núcleo do átomo de hélio) possui massa
+          <b>m=6,64.10^(-27)kg</b> e carga <b>q=+2e=3,2.10^(-19)C</b>. Compare o módulo da força de repulsão
+          elétrica entre duas partículas <b>α</b> com o módulo da força de atração gravitacional entre elas.
+        </p>
+        <br>
+      <h4>Resolução da questão</h4>
+      <br>
+       <img src="images/resolucao1.png"  alt="Resolução1" class="imageg" ><br/>
+       <img src="images/resolucao2.png"  alt="Resolução2" class="imageg" ><br/>
+      </p>
+    </div>
+  </div>
+        <div class="row">
+          <div class="col-md conteudo">
+            <h3 id="referencias">Referências</h3>
+          <br>
+          <p>YOUNG & FREEDMAN. <b>Física III: Eletromagnetismo</b>. São Paulo, 2015.
+          </p>
+          <p>HELERBROCK, Rafael. <b>Charles Coulomb</b>. Disponível em: <a href="https://brasilescola.uol.com.br/fisica/charles-coulomb.htm" target="_blank" rel="noopener noreferrer">https://brasilescola.uol.com.br/fisica/charles-coulomb.htm</a>. Acesso em: 17 de Dezembro de 2020.
+          </p>
+          <p>HELERBROCK, Rafael. <b>Eletrostática</b>. Disponível em: <a href="https://brasilescola.uol.com.br/fisica/principio-eletrostatica.htm" target="_blank" rel="noopener noreferrer">https://brasilescola.uol.com.br/fisica/principio-eletrostatica.htm</a>. Acesso em: 17 de Dezembro de 2020.
+          </p>
+          <p>HELERBROCK, Rafael. <b>Processos de eletrização</b>. Disponível em: <a href="https://brasilescola.uol.com.br/fisica/processo-eletrizacao.htm" target="_blank" rel="noopener noreferrer">https://brasilescola.uol.com.br/fisica/processo-eletrizacao.htm</a>. Acesso em: 17 de Dezembro de 2020.
+          </p>
+          <p>TODAMATÉRIA. <b>Lei de Coulomb</b>. Disponível em: <a href="https://www.todamateria.com.br/lei-de-coulomb/" target="_blank" rel="noopener noreferrer">https://www.todamateria.com.br/lei-de-coulomb/</a>. Acesso em: 17 de Dezembro de 2020.
+          </p>
+          <p>BORGES, Dayane. <b>Carga elétrica, o que é? Definição, principais tipos, unidade e quantização</b>. Disponível em: <a href="https://conhecimentocientifico.r7.com/carga-eletrica/" target="_blank" rel="noopener noreferrer">https://conhecimentocientifico.r7.com/carga-eletrica/</a>. Acesso em: 17 de Dezembro de 2020.
+          </p>
+          <p>PROPG. <b>A força eletrostática e a lei de Coulomb</b>. Disponível em: <a href="https://propg.ufabc.edu.br/mnpef-sites/relatividade-restrita/a-forca-eletrostatica/" target="_blank" rel="noopener noreferrer">https://propg.ufabc.edu.br/mnpef-sites/relatividade-restrita/a-forca-eletrostatica/</a>. Acesso em: 17 de Dezembro de 2020.
+          </p>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+
+    <div class="footer">
+        <div class="row">
+          <div class="col-md">
+            <i>Site desenvolvido como critério de avaliação no curso  de Fundamentos de Eletromagnetismo - UFMG </i><br>
+            <i>Integrantes da Equipe: Bruno Fernandes Cardoso, Guilherme Francisco Antunes Silva e Robert Gustavo Silva Pereira.</i>
+          </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
